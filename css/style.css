@@ -1,0 +1,21 @@
+body {
+
+  background-color:rgb(0, 51, 0);
+}
+body>header{
+  color:white;
+  font-family: monospace;
+}
+
+main {
+ background-color:white;
+ border-radius: 15px;
+ font-family: monospace;
+
+}
+
+article>header {
+ text-align: center;
+ font-size: large;
+ padding: 20px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="timetrackApp">
+<head>
+	<meta charset="UTF-8">
+	<title>TimeTrack</title>
+
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="node_modules/fullcalendar/dist/fullcalendar.css"/>
+	<!-- jquery, moment, and angular have to get included before fullcalendar -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/moment/min/moment.min.js"></script>
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/fullcalendar/dist/fullcalendar.min.js"></script>
+	<script src="node_modules/fullcalendar/dist/gcal.js"></script>
+
+	<script src="node_modules/angular-ui-calendar/src/calendar.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers/MainController.js"></script>
+<body>
+	<header><h1>Time Track App</h1></header>
+  <main>
+    <article ng-controller="MainController">
+      <header>Agenda</header>
+      <section ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar"></section>
+      <footer><p>{{alertMessage}}</p></footer>
+    </article>
+  </main>
+</body>
+</html>
